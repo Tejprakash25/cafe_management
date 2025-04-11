@@ -59,7 +59,7 @@ body {
              align-items:center;
         }
         .hero {
-            background: url('C:\Users\LENOVO\Pictures\cmsgallery\gallerycss.jpeg') no-repeat center/cover;
+            background: url('images/cmsgallery/gallerycss.jpeg') no-repeat center/cover;
             height: 350px;
             display: flex;
             align-items: center;

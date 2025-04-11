@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reservations | Cafe Admin</title>
+    <link rel="stylesheet" href="css/admin.css" />
+    <script defer src="js/reservations.js"></script>
+</head>
+<body>
+<div class="sidebar">
+    <h2>Cafe Admin</h2>
+    <ul>
+        <li><a href="dashboard.html">&#x1F4CA; Dashboard</a></li>
+        <li><a href=" ">&#x1F374; Menu Management</a></li>
+        <li class="active"><a href="reservation_admin.html">&#x1F4C5; Reservations</a></li>
+        <li><a href="contact1_admin.html">&#x2709; Contact Messages</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <header>
+        <h2>Reservation Management</h2>
+        <div class="admin-profile">
+            <div class="notification-bell">
+                <span class="notification-count">0</span>
+                <img src="bell-icon.png" alt="Notifications" class="icon" />
+            </div>
+            <div class="profile-dropdown">
+                <span class="admin-name">Admin</span>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="reservations">
+        <h3>All Reservations</h3>
+
+        <div class="search-filter">
+            <input type="text" id="search-input" placeholder="Search by name or phone..." />
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Reservation ID</th>
+                <th>Customer</th>
+                <th>Time</th>
+                <th>Guests</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody id="reservations-table">
+            <!-- Reservations will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+</html>

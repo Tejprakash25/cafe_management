@@ -112,7 +112,7 @@ body {
                                      }
 
                                      .hero {
-                                         background: url('C:\Users\LENOVO\Pictures\cmsabout\a12.jeg') no-repeat center/cover;
+                                         background: url("http://localhost:8080/images/cmsabout/a12.jeg") no-repeat center/cover;
                                          height: 400px;
                                          display: flex;
                                          align-items: center;
@@ -240,7 +240,7 @@ body {
                              }
                              .stats {
                                  position: relative;
-                                 background: url('C:\Users\LENOVO\Pictures\cmsabout\a15.jpeg') no-repeat center/cover;
+                                 background: url("http://localhost:8080/images/cmsabout/a15.jpeg") no-repeat center/cover;
                                  height: 250px;
                                  display: flex;
                                  align-items: center;
@@ -564,7 +564,7 @@ body {
 }
 .stats {
     position: relative;
-    background: url('C:\Users\LENOVO\Pictures\cmsabout\a15.jpeg') no-repeat center/cover;
+    background: url("http://localhost:8080/images/cmsabout/a15.jpeg") no-repeat center/cover;
     height: 250px;
     display: flex;
     align-items: center;

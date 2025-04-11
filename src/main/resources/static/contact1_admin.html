@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Contact Messages</title>
+    <link rel="stylesheet" href="css/contact1_admin.css" />
+    <script defer src="js/contact1_admin.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Cafe Admin</h2>
+    <ul>
+        <li><a href="dashboard.html">&#x1F4CA; Dashboard</a></li>
+        <li><a href="menu_management2.html">&#x1F374; Menu Management</a></li> <!-- Update this href if needed -->
+        <li><a href="reservation_admin.html">&#x1F4C5; Reservations</a></li>
+        <li class="active"><a href="contact1_admin.html">&#x2709; Contact Messages</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <header>
+        <h2>Contact Messages</h2>
+        <div class="admin-profile">
+            <div class="notification-bell">
+                <span class="notification-count">0</span>
+                <img src="bell-icon.png" alt="Notifications" class="icon" />
+            </div>
+            <div class="profile-dropdown">
+                <span class="admin-name">Admin</span>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Contact Messages</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone No.</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+            </tr>
+            </thead>
+            <tbody id="contact-messages-table">
+            <!-- Messages will be added here via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+</div>
+
+</body>
+</html>

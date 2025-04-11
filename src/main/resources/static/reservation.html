@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
-    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="css/reservation.css">
 </head>
 <body>
 
@@ -34,30 +34,35 @@
 <section class="reservation-form">
     <h2>MAKE A RESERVATION</h2>
     <p>You can make a reservation any time online or by calling +91 8904562489 during our opening hours.</p><br>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" required>
+    <section class="reservation-form">
+        <h2>MAKE A RESERVATION</h2>
+        <p>You can make a reservation any time online or by calling +91 8904562489 during our opening hours.</p><br>
+        <form id="reservationForm" method="POST" action="http://localhost:8080/booking/makeReservation">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
 
-        <label for="phone">Phone No.:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone" required>
+            <label for="phone">Phone No.:</label>
+            <input type="tel" id="phone" name="phoneNumber" pattern="[0-9]{10}" placeholder="Phone" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
 
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
 
-        <label for="seats">Seats:</label>
-        <input type="number" min="1" max="10" id="seats" name="seats" placeholder="Seats" required>
+            <label for="seats">Seats:</label>
+            <input type="number" min="1" max="10" id="seats" name="seats" placeholder="Seats" required>
 
-        <label for="requests">Special Requests:</label>
-        <textarea id="requests" name="requests" placeholder="Special Requests"></textarea>
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="specialInstructions" placeholder="Special Requests"></textarea>
 
-        <button type="submit">BOOK NOW</button>
-    </form>
+            <button type="submit">BOOK NOW</button>
+        </form>
+    </section>
+
 </section>
 
 <footer>
@@ -79,13 +84,13 @@
     </div>
 
     <div class="food-gallery">
-        <img src="images/reservation/food1.jpeg" alt="Food 1">
-        <img src="images/reservation/food2.jpeg" alt="Food 2">
-        <img src="images/reservation/food3.jpeg" alt="Food 3">
-        <img src="images/reservation/food4.jpeg" alt="Food 4">
-        <img src="images/reservation/food5.jpeg" alt="Food 5">
-        <img src="images/reservation/food6.jpeg" alt="Food 6">
-        <img src="images/reservation/food7.jpeg" alt="Food 7">
+        <img src="http://localhost:8080/images/cmsreservation/food1.jpeg" alt="Food 1">
+        <img src="http://localhost:8080/images/cmsreservation/food2.jpeg" alt="Food 2">
+        <img src="http://localhost:8080/images/cmsreservation/food3.jpeg" alt="Food 3">
+        <img src="http://localhost:8080/images/cmsreservation/food4.jpeg" alt="Food 4">
+        <img src="http://localhost:8080/images/cmsreservation/food5.jpeg" alt="Food 5">
+        <img src="http://localhost:8080/images/cmsreservation/food6.jpeg" alt="Food 6">
+        <img src="http://localhost:8080/images/cmsreservation/food7.jpeg" alt="Food 7">
     </div>
 
     <div class="f1">
@@ -93,6 +98,6 @@
     </div>
 </footer>
 
-<script src="reservation.js"></script>
+<script src="js/reservation.js"></script>
 </body>
 </html>

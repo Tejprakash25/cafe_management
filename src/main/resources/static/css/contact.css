@@ -54,7 +54,7 @@ body {
   font-weight: bold;
         }
         .hero {
-            background: url('C:\Users\LENOVO\Pictures\cmscontact\contact.jpeg') no-repeat center/cover;
+            background: url("http://localhost:8080/images/cmscontact/contact.jpeg") no-repeat center/cover;
             height: 350px;
             display: flex;
             align-items: center;

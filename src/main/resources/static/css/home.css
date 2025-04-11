@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background-image: url('C:\Users\LENOVO\Pictures\cmshome\hommepageimage.jpeg');
+    background-image: url("http://localhost:8080/images/cmshome/homepageimage.jpeg");
     }
 
   /* Header */
